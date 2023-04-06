@@ -1,0 +1,87 @@
+<div class="parent">
+
+  <div class="child2">
+    <div class="inputs">
+      <mat-label>Name</mat-label>
+      <mat-form-field class="example-form-field">
+        <input matInput type="text" [(ngModel)]="Visiting.name" />
+      </mat-form-field>
+
+      <mat-label>Email</mat-label>
+      <mat-form-field>
+        <input matInput type="text" [(ngModel)]="Visiting.email" placeholder="Email" />
+      </mat-form-field>
+
+      <mat-label>Phone No.</mat-label>
+      <mat-form-field>
+        <input matInput [(ngModel)]="Visiting.phone" placeholder="Phone" />
+      </mat-form-field>
+
+      <mat-label>Profession</mat-label>
+      <mat-form-field>
+        <input matInput [(ngModel)]="Visiting.profession" placeholder="profession" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="child1" id="htmlData">
+    <div class="triangle">
+      <div class="my-card">
+        <div class="card1">
+          <div class="top-left"></div>
+          <div class="bottom-right"></div>
+          <div>
+            <img
+              src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" />
+          </div>
+          <div class="to">
+            <p class="heading">
+              <strong>
+                {{ Visiting.name }}
+              </strong>
+            </p>
+
+            <p>
+              {{ Visiting.profession }}
+            </p>
+          </div>
+
+          <div class="bot">
+            <p>
+              <mat-icon>phone</mat-icon>
+              {{ Visiting.phone }}
+            </p>
+
+            <p>
+              <mat-icon>email</mat-icon>
+              {{ Visiting.email }}
+            </p>
+          </div>
+
+          <div class="m-btn">
+            <p class="para">www.motivitylabs.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <button type="button" class="printBtn" (click)="onPrint()" style="
+          border-radius: 5px;
+          padding: 13px 15px;
+          border: none;
+        ">
+        Download As Image
+      </button>
+    </div>
+
+    <!-- <div>
+      <button class="btn btn-success btn-block" 
+      style="
+          border-radius: 5px;
+          padding: 13px 15px;
+          border: none;" class="printBtn" (click)="openPDF()">Download PDF</button>
+  </div> -->
+  </div>
+
+
+</div>

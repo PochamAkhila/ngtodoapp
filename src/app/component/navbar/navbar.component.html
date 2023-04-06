@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+    <div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Todo-App</span>
+    </div>
+    <div>
+        <!-- 
+        <button *ngFor="let item of menuItems" routerLink="{{item.link}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true}" mat-button
+            class="{{item.className}} favorite-icon" aria-label="Example icon-button with heart icon">
+            {{item.title}}
+        </button> -->
+
+        <button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact:true}" mat-button
+            class="home-link favorite-icon" aria-label="Example icon-button with heart icon">
+            Home
+
+            <button matBadge="4" matBadgeOverlap="false" class="demo-section my-btn">{{ count }}</button>
+
+        </button>
+        <button routerLink="/todo" routerLinkActive="active" mat-button class="todo-link"
+            aria-label="Example icon-button with share icon">
+            Todo
+        </button>
+
+        <button routerLink="/form" routerLinkActive="active" mat-button class="form-link"
+            aria-label="Example icon-button with share icon">
+            Form
+        </button>
+
+        <button routerLink="/card" routerLinkActive="active" mat-button class="card-link"
+            aria-label="Example icon-button with share icon">
+          Card
+        </button>
+
+        <button routerLink="/id-card" routerLinkActive="active" mat-button class="id-card-link"
+            aria-label="Example icon-button with share icon">
+        Id-card
+        </button>
+    </div>
+</mat-toolbar>

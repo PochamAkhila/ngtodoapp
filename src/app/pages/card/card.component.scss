@@ -1,0 +1,161 @@
+.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer) {
+    display: flex !important;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+}
+
+.child1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.triangle {
+    position: relative;
+    bottom: 0;
+    left: 59px;
+    right: 0;
+    top: -30px;
+}
+
+.top-left {
+    border-top: 150px solid #EF751B;
+    border-right: 150px solid transparent;
+    position: absolute;
+    top: -1%;
+    left: 0%;
+}
+
+.bottom-right {
+    border-top: 150px solid #EF751B;
+    border-left: 150px solid transparent;
+    margin-left: 10px;
+    position: absolute;
+    right: 0%;
+    bottom: 59%;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    gap: 10px;
+    border: 1px solid white;
+    outline: 1px solid black;
+    z-index: 9999;
+    outline-offset: 1.3rem;
+    border-radius: 1px;
+}
+
+.heading {
+    font-size: 28px;
+}
+
+img {
+    margin-bottom: 15px;
+}
+
+.m-btn {
+    // padding: 3% 39%;
+    // background-color: #EF751B;
+    // border: none;
+    // border-radius: 10px;
+    // font-weight: 800;
+    // margin-top: 20px;
+    // border: 1px solid #EF751B;
+    // background-color: #EF751B;
+    color: black;
+    padding: 3% 50%;
+    border-top: 50px solid #EF751B;
+    border-bottom: 50px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 14px;
+    position: absolute;
+    right: 0%;
+    bottom: -23%;
+}
+
+.para {
+    position: absolute;
+    z-index: 11;
+    top: -92%;
+    left: 35%;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+.to {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.child2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 90vh;
+    background-color: darkgrey;
+}
+
+.inputs {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 300px;
+    top: 26%;
+    right: 76%;
+}
+
+.printBtn {
+    position: absolute;
+    bottom: 14%;
+    left: 64%;
+    background-color: #EF751B;
+    color: white;
+}
+
+@media print {
+    .inputs {
+        display: none ! important;
+    }
+
+    .triangle {
+        left: -105px;
+        top: -4px;
+    }
+
+    .printBtn {
+        display: none !important;
+    }
+
+    .m-btn {
+        background-color: #EF751B !important;
+    }
+}

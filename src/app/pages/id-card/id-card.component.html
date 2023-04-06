@@ -1,0 +1,77 @@
+<div style="text-align: center; margin-top: 20px">
+  <button type="button" class="printBtn1" (click)="onPrint()" style="
+      background-color: deepskyblue;
+      border-radius: 5px;
+      padding: 10px 5px;
+      border: none;
+    ">
+    Download Here!
+  </button>
+</div>
+
+<div class="triangle1" id="htmlData">
+  <div class="top-left1"></div>
+  <div class="bottom-right1"></div>
+  <div class="id-card">
+    <div class="header">
+      <img
+        src="https://motivitylabs.com/wp-content/uploads/elementor/thumbs/logo-prgkor4cuantgaya7ag8ef6zp2tvgjfpld4fltl3e4.png" />
+    </div>
+    <div class="photo">
+      <img src="https://www.kindpng.com/picc/m/695-6955645_female-user-female-user-icon-png-transparent-png.png" />
+    </div>
+    <h2>{{ Card.name }}</h2>
+
+    <h3>
+      {{ Card.profession }} : <strong>{{ Card.id }}</strong>
+    </h3>
+    <p>
+      <strong> {{ Card.companyEmail }}</strong>
+    </p>
+
+    <!-- <hr class="hr-line" /> -->
+    <div class="bg">
+      <p class="line">
+        {{ Card.address }}
+      </p>
+      <p>{{ Card.pincode }}</p>
+      <p>
+        <strong>{{ Card.phone }} , {{ Card.email }}</strong>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="input">
+  <mat-form-field class="example-form-field">
+    <mat-label>Name</mat-label>
+    <input matInput type="text" [(ngModel)]="Card.name" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="Card.profession" placeholder="profession" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="Card.id" placeholder="id" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="Card.companyEmail" placeholder="companyEmail" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="Card.address" placeholder="address" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="Card.pincode" placeholder="pincode" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="Card.phone" placeholder="Phone" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="Card.email" placeholder="Email" />
+  </mat-form-field>
+</div>
